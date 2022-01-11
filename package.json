@@ -2,7 +2,7 @@
   "name": "swork",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gokusama-dev.github.io/",
+  "homepage": "http://gokusama-dev.github.io/StraysofGhaziabad",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

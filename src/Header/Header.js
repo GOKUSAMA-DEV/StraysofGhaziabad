@@ -12,10 +12,10 @@ const Header = () => {
           {/* <HeaderBoxLogo><FaBeer /></HeaderBoxLogo> */}
           <HeaderBoxLogo><FaBeer /></HeaderBoxLogo>
           <HeaderBoxNav>
-            <HeaderNavLink><Link to="/" style={{color: 'white'}}>Home</Link></HeaderNavLink>
-            <HeaderNavLink><Link to="/gallery" style={{color: 'white'}}>Gallery</Link></HeaderNavLink>
-            <HeaderNavLink><Link to="/blog" style={{color: 'white'}}>Blog</Link></HeaderNavLink>
-            <HeaderNavLink><Link to="/donate" style={{color: 'black', padding: '5px 10px', backgroundColor: "yellow"}}><i>Donate</i></Link></HeaderNavLink>
+            <HeaderNavLink><Link to="/StraysofGhaziabad" style={{color: 'white'}}>Home</Link></HeaderNavLink>
+            <HeaderNavLink><Link to="/StraysofGhaziabad/gallery" style={{color: 'white'}}>Gallery</Link></HeaderNavLink>
+            <HeaderNavLink><Link to="/StraysofGhaziabad/blog" style={{color: 'white'}}>Blog</Link></HeaderNavLink>
+            <HeaderNavLink><Link to="/StraysofGhaziabad/donate" style={{color: 'black', padding: '5px 10px', backgroundColor: "yellow"}}><i>Donate</i></Link></HeaderNavLink>
           </HeaderBoxNav>
         </HeaderBox>
     </>
