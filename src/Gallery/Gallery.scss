@@ -1,0 +1,36 @@
+.parent_gallery{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 2%;
+    background-color: paleturquoise;
+
+    .gallery_collage{
+        height: 100%;
+        width: 90%;
+        
+
+        .grid_prop{
+            column-width: 33%;
+            column-count: 3;
+            grid-gap: 0px 5px;
+
+
+            .image_card{
+                height: auto;
+                width: 100%;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+            }
+        }
+
+        
+    }
+}

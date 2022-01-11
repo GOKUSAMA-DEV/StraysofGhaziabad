@@ -1,0 +1,88 @@
+import React, { useState } from 'react'
+import './Gallery.scss'
+import GalleryData from './GalleryData'
+import SearchBar from "material-ui-search-bar";
+import { ReactPhotoCollage } from "react-photo-collage";
+// import coulmn_one_a from '../Assets/asia-2179107.jpg'
+// import coulmn_one_b from '../Assets/dog-4111651.jpg'
+// import coulmn_one_c from '../Assets/elephant-1822481.jpg'
+// import coulmn_one_d from '../Assets/india-1748445.jpg'
+// import coulmn_one_e from '../Assets/india-4051748.jpg'
+// import coulmn_one_f from '../Assets/indian-5079278.jpg'
+// import coulmn_two_a from '../Assets/hindu-2178480.jpg'
+// import coulmn_two_b from '../Assets/ganesh-3692779.jpg'
+// import coulmn_two_c from '../Assets/humayun-5055050.jpg'
+// import coulmn_two_d from '../Assets/holi-2416686.jpg'
+// import coulmn_three_a from '../Assets/isa-khan-tomb-2242989.jpg'
+// import coulmn_three_b from '../Assets/man-613601.jpg'
+// import coulmn_three_c from '../Assets/mehtab-bagh-6698669.jpg'
+// import coulmn_three_d from '../Assets/street-5703332.jpg'
+// import coulmn_three_e from '../Assets/taj-mahal-1379273.jpg'
+// import coulmn_three_f from '../Assets/temple-290638.jpg'
+// import coulmn_three_g from '../Assets/travel-4813654.jpg'
+
+
+const Gallery = () => {
+
+
+
+
+
+    const [rows, setRows] = useState(GalleryData);
+    const [searched, setSearched] = useState("");
+
+    
+    const requestSearch = (searchedVal) => {
+        const filteredRows = GalleryData.filter((row) => {
+            return row.name.toLowerCase().includes(searchedVal.toLowerCase());
+        });
+        setRows(filteredRows);
+    };
+    
+    const cancelSearch = () => {
+        setSearched("");
+        requestSearch(searched);
+    };
+    
+    // console.log(GalleryData)
+    
+    const setting = {
+        width: 'auto',
+        height: ['450px', '450px', '450px', '450px', '450px', '450px', '450px'],
+        layout: [3, 2, 3, 2, 3, 2, 3],
+        photos: rows,
+        showNumOfRemainingPhotos: true
+    };
+    console.log(rows);
+
+    return (
+        <>
+            <div className="parent_gallery">
+                <div className="search_box">
+                    <SearchBar
+                        style={{ width: '100%' }}
+                        value={searched}
+                        onChange={(searchVal) => requestSearch(searchVal)}
+                        onCancelSearch={() => cancelSearch()}
+                        placeholder="Search By Location"
+                    />
+                </div>
+                <div className="gallery_collage">
+                    {/* <div className="column_one">
+                        {
+                            // rows.map((val, ind) => (
+                                rows.map((val, ind) => (
+                                <div key={ind} className="image_card">
+                                    <img src={val.source} />
+                                </div>
+                            ))
+                        }
+                    </div> */}
+                    <ReactPhotoCollage {...setting} />
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Gallery
