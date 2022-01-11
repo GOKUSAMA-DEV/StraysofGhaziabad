@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/StraysofGhaziabad/static/css/main.ebce6523.css",
-    "main.js": "/StraysofGhaziabad/static/js/main.ec84f41d.js",
+    "main.js": "/StraysofGhaziabad/static/js/main.b58eb034.js",
     "static/media/IMG_20210717_181841.jpg": "/StraysofGhaziabad/static/media/IMG_20210717_181841.db48d1e356904bf69a01.jpg",
     "static/media/IMG_20210913_151850.jpg": "/StraysofGhaziabad/static/media/IMG_20210913_151850.15c47502c1b61a532dae.jpg",
     "static/media/IMG-20211225-WA0024.jpeg": "/StraysofGhaziabad/static/media/IMG-20211225-WA0024.c727d31fc16d4734fa85.jpeg",
@@ -30,10 +30,10 @@
     "static/media/IMG-20220108-WA0006.jpg": "/StraysofGhaziabad/static/media/IMG-20220108-WA0006.b8cc54214569af790f47.jpg",
     "index.html": "/StraysofGhaziabad/index.html",
     "main.ebce6523.css.map": "/StraysofGhaziabad/static/css/main.ebce6523.css.map",
-    "main.ec84f41d.js.map": "/StraysofGhaziabad/static/js/main.ec84f41d.js.map"
+    "main.b58eb034.js.map": "/StraysofGhaziabad/static/js/main.b58eb034.js.map"
   },
   "entrypoints": [
     "static/css/main.ebce6523.css",
-    "static/js/main.ec84f41d.js"
+    "static/js/main.b58eb034.js"
   ]
 }
