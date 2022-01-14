@@ -88,6 +88,13 @@ export const ServiceBox = styled.div`
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+    @media (max-width: 768px) {
+       display: grid;
+        grid-template-columns: auto auto;
+    grid-gap: 10px 20px;
+
+    }
+
     @media (max-width: 425px) {
         display: flex;
         flex-direction: column;

@@ -30,15 +30,49 @@ export const FooterBox = styled.div`
 
 export const FooterIcons = styled.div` 
     height: auto;
-    width: 20%;
+    width: 30%;
     display: flex;
-    justify-content: space-around;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+
+    @media (max-width: 1440px) {
+    width: 50%;
+}
+
+    @media (max-width: 1024x) {
+    width: 80%;
+}
+    
+    @media (max-width: 768x) {
+    width: 100%;
+}
+
+    @media (max-width: 425px) {
+    width: 80%;
+}
 `
 
-export const FooterNavIcons = styled.li`
+export const FooterNavIcons = styled.a`
     height: auto;
     width: 10%;
-    list-style-type: none;
+    text-decoration: none;
+    margin-left: 20px;
     cursor: pointer;
     color: white;
+
+    @media (max-width: 1440px) {
+    width: 7%;
+}
+
+    @media (max-width: 1024px) {
+    width: 7%;
+}
+
+    @media (max-width: 768px) {
+    width: 10%;
+}
+
+    @media (max-width: 425px) {
+    width: 15%;
+}
 `

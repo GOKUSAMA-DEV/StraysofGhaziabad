@@ -43,7 +43,7 @@ const Home = () => {
                         </OurTitleCon>
                         <OurViewCon>
                             <OurView>
-                                <Link to="/gallery">View More</Link>
+                                <Link to="/StraysofGhaziabad/gallery">View More</Link>
                             </OurView>
                         </OurViewCon>
                     </OurBox>
