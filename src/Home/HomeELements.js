@@ -108,6 +108,8 @@ export const ServiceCard = styled.div`
     margin: auto;
     background-color: linen;
     padding: 0 10px;
+    border-radius: 5px;
+    box-shadow:  15px 10px 27px grey;
 `
 
 export const ServiceCardIimg = styled.img`

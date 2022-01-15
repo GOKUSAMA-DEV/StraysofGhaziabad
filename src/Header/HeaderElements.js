@@ -16,15 +16,22 @@ export const HeaderBox = styled.div`
 
 export const HeaderBoxLogo = styled.div`
     height: auto;
-    background-color: lightcyan;
-    width: 5%;
+    /* background-color: lightcyan; */
+    width: 10%;
+    padding: 1rem 0;
     
     display: flex;
     justify-content: center;
     @media (max-width: 425px) {
-        width: 25%;
+        width: 50%;
         padding: 10px 20px;
   }
+`
+
+export const HeadingLogo = styled.img`
+    height: auto;
+    width: 100%;
+    object-fit: cover;
 `
 
 export const HeaderBoxNav = styled.div`
